@@ -45,6 +45,15 @@
     margin: 0;
     line-height: normal;
   }
+  
+  p:last-of-type {
+    color: $black;
+  }
+  
+  a {
+    font-weight: 800;
+    color: $black;
+  }
 }
 
 .container {
