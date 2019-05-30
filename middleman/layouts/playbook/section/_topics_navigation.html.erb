@@ -1,7 +1,11 @@
-<select class="topics-list wide" name="">
-  <option value="">About us / Our values</option>
-  
-  <% topics.each do |topic| %>
-    <option value=""><%= link_to h(topic.title), "##{h(topic.title_id)}" %></option>
-  <% end %>
-</select>
+<div class="custom-select-wrapper">
+  <p>
+    About us
+  </p>
+
+  <select class="topics-list wide">
+    <% topics.each do |topic| %>
+      <option value=""><%= link_to h(topic.title), "##{h(topic.title_id)}" %></option>
+    <% end %>
+  </select>
+</div>
